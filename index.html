@@ -1,0 +1,706 @@
+<!-- <!DOCTYPE html>
+<html lang="en" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polina Pikalova | Portfolio</title>
+    <meta
+      name="description"
+      content="Portfolio Front-end Developer Polina Pikalova."
+    />
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="menu menu--principal">
+          <li class="menu__item">
+            <a class="menu__link active" href="#home">
+              <span class="menu__text">Home</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#projetos">
+              <span class="menu__text">Projects</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#sobre">
+              <span class="menu__text">About</span>
+            </a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contato">
+              <span class="menu__text">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__brand">
+        <a href="#home">
+          <img
+            class="brand__logo"
+            src="assets/images/logo-ea.png"
+            alt="Logo EA"
+          />
+        </a>
+      </div>
+      <div class="header__toggle">
+        <i id="toggleTheme" class="bi bi-sun"></i>
+      </div>
+    </header> -->
+
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Polina Pikalova | Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <ul class="menu menu--principal">
+          <li class="menu__item">
+            <a class="menu__link active" href="#home"
+              ><span class="menu__text">Home</span></a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#projetos"
+              ><span class="menu__text">Projects</span></a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#sobre"
+              ><span class="menu__text">About</span></a
+            >
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="#contato"
+              ><span class="menu__text">Contact</span></a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div class="header__brand">
+        <a href="#home"
+          ><img
+            class="brand__logo"
+            src="assets/images/logo-ea.png"
+            alt="Logo EA"
+        /></a>
+      </div>
+      <div class="header__toggle">
+        <i id="toggleTheme" class="bi bi-moon-stars"></i>
+      </div>
+    </header>
+
+    <nav class="nav--mobile">
+      <ul class="menu menu--mobile">
+        <li class="menu__item">
+          <a class="menu__link active" href="#home">
+            <i class="menu__icon bi bi-house-door"></i>
+            <span class="menu__text">Home</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#projetos">
+            <i class="menu__icon bi bi-window-stack"></i>
+            <span class="menu__text">Projects</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#sobre">
+            <i class="menu__icon bi bi-person"></i>
+            <span class="menu__text">About</span>
+          </a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#contato">
+            <i class="menu__icon bi bi-envelope"></i>
+            <span class="menu__text">Contact</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <main id="home">
+      <div class="main__content1">
+        <h1>FRONT-END DEVELOPER</h1>
+        <p>
+          Hi, I’m Polina — Front-End Developer. <br />
+          I build responsive, user-centered websites with clean code and modern
+          design. <br />
+          Open to new opportunities and collaborations.
+        </p>
+        <ul class="menu menu--social">
+          <li>
+            <a
+              class="menu__link"
+              href="https://github.com/Poly1999"
+              target="_blank"
+            >
+              <i class="menu__icon bi bi-github"></i>
+            </a>
+          </li>
+          <li>
+            <a
+              class="menu__link"
+              href="https://www.linkedin.com/in/polina-pikalova-366148375/"
+              target="_blank"
+            >
+              <i class="menu__icon bi bi-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+        <a href="#projetos">
+          <button class="btn btn--primary">
+            <span>View Projects</span>
+            <i class="bi bi-arrow-down-right"></i>
+          </button>
+        </a>
+      </div>
+      <div class="main__content2">
+        <img
+          src="./assets/images/images-hero.jpg"
+          alt="Hero-section-image"
+          class="main__image"
+        />
+      </div>
+
+      <section class="technologies">
+        <h2>Proficient with leading market technologies</h2>
+        <ul class="technologies__list">
+          <li class="technologies__item">
+            <img
+              class="technologies__logo"
+              src="assets/images/technologies/html.svg"
+              alt="Logo HTML"
+            />
+          </li>
+          <li class="technologies__item">
+            <img
+              class="technologies__logo"
+              src="assets/images/technologies/css.svg"
+              alt="Logo CSS"
+            />
+          </li>
+          <li class="technologies__item">
+            <img
+              class="technologies__logo"
+              src="assets/images/technologies/javascript.svg"
+              alt="Logo JS"
+            />
+          </li>
+          <li class="technologies__item">
+            <img
+              class="technologies__logo"
+              src="assets/images/technologies/sass.svg"
+              alt="Logo SASS"
+            />
+          </li>
+          <li class="technologies__item">
+            <img
+              class="technologies__logo"
+              src="assets/images/technologies/react.svg"
+              alt="Logo React"
+            />
+          </li>
+          <li class="technologies__item">
+            <img
+              class="technologies__logo"
+              src="assets/images/technologies/typescript.svg"
+              alt="Logo TypeScript"
+            />
+          </li>
+        </ul>
+      </section>
+
+      <section id="projetos" class="projects">
+        <h2>Projects</h2>
+        <div class="projects__container">
+          <div class="projects__card">
+            <img
+              class="card__cover"
+              src="assets/images/projects/portfolio-beauty.png"
+              alt="Capa Josi's Box"
+            />
+            <div class="card__body">
+              <h3 class="card__title">Beauty Zone</h3>
+              <p class="card__description">Landing page for a beauty clinic.</p>
+              <ul class="card__list">
+                <li class="card__item">Modern, minimalist design;</li>
+                <li class="card__item">
+                  Sections: About, Why Us, Services, Contact;
+                </li>
+                <li class="card__item">
+                  Interactive elements with JavaScript (menu, animations);
+                </li>
+                <li class="card__item">Fully responsive on all devices.</li>
+              </ul>
+              <ul class="technologies__list">
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/html.svg"
+                    alt="Logo HTML"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/css.svg"
+                    alt="Logo CSS"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/sass.svg"
+                    alt="Logo SASS"
+                  />
+                </li>
+              </ul>
+              <div class="card__buttons">
+                <a
+                  href="https://poly1999.github.io/Project-BeatyZone/"
+                  class="btn btn--primary"
+                >
+                  <span>Preview</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a
+                  href="https://github.com/Poly1999/Project-BeatyZone"
+                  class="btn"
+                >
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__card card--reverse">
+            <img
+              class="card__cover"
+              src="assets/images/projects/portfolio-delivery.png"
+              alt="Food Delivery Tomato"
+            />
+            <div class="card__body">
+              <h3 class="card__title">Food Delivery App</h3>
+              <p class="card__description">
+                Modern and responsive website for a food delivery service.
+              </p>
+              <ul class="card__list">
+                <li class="card__item">
+                  Interactive platform with dynamic content and clean user
+                  interface;
+                </li>
+                <li class="card__item">
+                  Built with a modern JavaScript framework (React);
+                </li>
+                <li class="card__item">
+                  Fully mobile-friendly and optimized for all devices;
+                </li>
+                <li class="card__item">
+                  Integrated routing and dynamic page rendering;
+                </li>
+                <li class="card__item">
+                  Deployed online using Vercel hosting platform.
+                </li>
+              </ul>
+              <ul class="technologies__list">
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/react.svg"
+                    alt="Logo React"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/html.svg"
+                    alt="Logo HTML"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/css.svg"
+                    alt="Logo CSS"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </li>
+              </ul>
+              <div class="card__buttons">
+                <a
+                  href="https://food-delivery-pik.vercel.app"
+                  class="btn btn--primary"
+                >
+                  <span>Preview</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a href="https://github.com/Poly1999/food-delivery" class="btn">
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__card">
+            <img
+              class="card__cover"
+              src="assets/images/projects/portfolio-lock.png"
+              alt="LockShark Pro"
+            />
+            <div class="card__body">
+              <h3 class="card__title">LockShark Pro</h3>
+              <p class="card__description">
+                Custom Website Development with Domain Integration.
+              </p>
+              <ul class="card__list">
+                <li class="card__item">Clean and responsive design;</li>
+                <li class="card__item">Fully mobile-friendly;</li>
+                <li class="card__item">
+                  Contact form connected to email for inquiries;
+                </li>
+                <li class="card__item">Deployed online with custom domain.</li>
+              </ul>
+              <ul class="technologies__list">
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/html.svg"
+                    alt="Logo HTML"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/css.svg"
+                    alt="Logo CSS"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </li>
+              </ul>
+              <div class="card__buttons">
+                <a href="https://lockshark-pro.com" class="btn btn--primary">
+                  <span>Preview</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a
+                  href="https://github.com/Poly1999/LocksmithWebSite"
+                  class="btn"
+                >
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__card card--reverse">
+            <img
+              class="card__cover"
+              src="assets/images/projects/portfolio-travel.png"
+              alt="Travel Agent"
+            />
+            <div class="card__body">
+              <h3 class="card__title">INGA TRAVEL</h3>
+              <p class="card__description">
+                Beautiful & user-friendly travel agency website.
+              </p>
+              <ul class="card__list">
+                <li class="card__item">
+                  Responsive design with sections for “Countries”,
+                  “Experiences”, and “Get in Touch”;
+                </li>
+                <li class="card__item">
+                  Interactive tour-selection form: budget, dates, destination;
+                </li>
+                <li class="card__item">
+                  Contact options via email, WhatsApp, Telegram, VK;
+                </li>
+                <li class="card__item">
+                  Contact form connected to email for direct inquiries.
+                </li>
+              </ul>
+              <ul class="technologies__list">
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/html.svg"
+                    alt="Logo HTML"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/css.svg"
+                    alt="Logo CSS"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </li>
+              </ul>
+              <div class="card__buttons">
+                <a href="#" class="btn btn--primary">
+                  <span>Preview</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a href="https://github.com/Poly1999/IngaTravel" class="btn">
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="projects__card">
+            <img
+              class="card__cover"
+              src="assets/images/projects/portfolio-bakery.png"
+              alt="Shop Bakery"
+            />
+            <div class="card__body">
+              <h3 class="card__title">Shop Bakery Landing Page</h3>
+              <p class="card__description">
+                Stylish bakery website with classic bakery-charm.
+              </p>
+              <ul class="card__list">
+                <li class="card__item">
+                  Responsive design featuring sections: Our Traditions, Chefs,
+                  Formats, Contacts;
+                </li>
+                <li class="card__item">
+                  “Join our bakery network” form asks name, phone, email;
+                </li>
+                <li class="card__item">
+                  Contact form connected to email for direct inquiries;
+                </li>
+                <li class="card__item">
+                  Deployed as static site on GitHub Pages, clean visuals and UI.
+                </li>
+              </ul>
+              <ul class="technologies__list">
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/html.svg"
+                    alt="Logo HTML"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/css.svg"
+                    alt="Logo CSS"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/javascript.svg"
+                    alt="Logo JavaScript"
+                  />
+                </li>
+                <li class="technologies__item">
+                  <img
+                    class="technologies__logo"
+                    src="assets/images/technologies/sass.svg"
+                    alt="Logo Sass"
+                  />
+                </li>
+              </ul>
+              <div class="card__buttons">
+                <a
+                  href="https://poly1999.github.io/Project-Bakery/"
+                  class="btn btn--primary"
+                >
+                  <span>Preview</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </a>
+                <a
+                  href="https://github.com/Poly1999/Project-Bakery"
+                  class="btn"
+                >
+                  <span>Repository</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://github.com/Poly1999?tab=repositories">
+            <button class="btn btn--primary">
+              <span>See All Projects</span>
+              <i class="bi bi-arrow-up-right"></i>
+            </button>
+          </a>
+        </div>
+      </section>
+
+      <section id="sobre" class="about">
+        <div class="about__content1">
+          <img
+            class="about__photo"
+            src="assets/images/avatar.jpg"
+            alt="Foto de Polina"
+          />
+          <div class="about__description">
+            <h2>ABOUT ME</h2>
+            <p>
+              Hi, I’m Polina! I’m passionate about creating digital experiences
+              that are both beautiful and functional. My journey with code
+              started with a simple “Hello World” in HTML, CSS, and JavaScript,
+              sparking a love for building interactive websites. Today, I focus
+              on front-end development, crafting responsive and engaging
+              interfaces while continuously exploring new technologies and
+              creative solutions.
+            </p>
+            <div class="about__icons">
+              <i class="bi bi-translate"></i>
+              <span
+                >English: Upper Intermediate | Ukrainian: Fluent | Russian:
+                Fluent</span
+              >
+            </div>
+            <div class="description__buttons">
+              <a href="mailto:pikalova.developer@gmail.com" target="_blank">
+                <button class="btn btn--primary">
+                  <span>CONNECT WITH ME</span>
+                  <i class="bi bi-arrow-up-right"></i>
+                </button>
+              </a>
+              <a
+                href="./assets/images/files/PolinaPikalovaResume .pdf"
+                target="_blank"
+              >
+                <button class="btn">
+                  <span>RESUME</span>
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="about__content2">
+          <div class="col1">
+            <div class="row1">
+              <h3 class="title-education">Education</h3>
+              <h4>
+                Technologies of Organic Substances, Food Additives and Cosmetics
+              </h4>
+              <span>Sep 2016 - Dec 2021</span>
+              <div class="about__icons">
+                <i class="bi bi-bank"></i>
+                <span
+                  >National Technical University «Kharkiv Polytechnic
+                  Institute»</span
+                >
+              </div>
+              <div class="about__icons">
+                <i class="bi bi-mortarboard"></i>
+                <span>Master's Degree</span>
+              </div>
+            </div>
+          </div>
+          <div class="col2">
+            <h3>Courses</h3>
+            <div id="accordion">
+              <div class="accordion__item active">
+                <div class="accordion__body">
+                  <p>Genius Space 2025</p>
+                  <p>
+                    Completed a Front-end Development course focused on building
+                    modern, responsive web applications. Gained solid knowledge
+                    of HTML, CSS, JavaScript, React, and learned the basics of
+                    TypeScript and Sass for scalable and maintainable code. The
+                    program included practical projects, UI/UX fundamentals, and
+                    version control with Git and GitHub. Currently continuing my
+                    studies in Back-end Development to become a fully skilled
+                    Full-Stack Developer, exploring Node.js, APIs, and database
+                    integration.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contato" class="contact">
+        <h2>Contact me</h2>
+        <p>
+          I’m always happy to connect and collaborate. Feel free to reach out
+          via email or through my social networks.
+        </p>
+        <ul class="menu menu--social">
+          <li>
+            <a
+              class="menu__link"
+              href="https://github.com/Poly1999"
+              target="_blank"
+            >
+              <i class="menu__icon bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a
+              class="menu__link"
+              href="https://www.linkedin.com/in/polina-pikalova-366148375/"
+              target="_blank"
+            >
+              <i class="menu__icon bi bi-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+          </li>
+        </ul>
+        <a href="mailto:pikalova.developer@gmail.com">
+          <button class="btn btn--primary">
+            <span class="email">pikalova.developer@gmail.com</span>
+          </button>
+        </a>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025. Portfolio developed by Polina Pikalova.All rights reserved.</p>
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
