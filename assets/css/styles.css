@@ -49,6 +49,10 @@ body {
   color: var(--text-color);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 8px;
 }
@@ -182,7 +186,6 @@ p {
 .menu__link.active .menu__text,
 .menu__link:hover .menu__icon,
 .menu__link:hover .menu__text {
-  /* color: var(--primary-color); */
   color: #dce7f2;
 }
 
