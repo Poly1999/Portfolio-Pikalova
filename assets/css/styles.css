@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;400&display=swap');
 
 :root {
-  /* Светлая тема по умолчанию */
   --primary-color: #0b0b0f;
   --primary-bg-color: #ffffff;
   --secondary-bg-color: #f0f0f0;
@@ -34,43 +33,6 @@ html[data-theme='light'] .technologies__logo {
   filter: invert(80%);
 }
 
-/* :root,
-:root[data-theme='dark'] {
-  --primary-color: #f0f0f0;
-
-  --primary-bg-color: #111217;
-  --secondary-bg-color: #28292e;
-  --primary-border-color: #28292e;
-  --secondary-border-color: #56575a;
-
-  --title-color: #f0f0f0;
-  --text-color: #9a9a9c;
-  --link-color: #9a9a9c;
-  --icon-color: #c7c8c9;
-}
-
-:root[data-theme='light'] {
-  --primary-color: #0b0b0f;
-
-  --primary-bg-color: #e9e9e9;
-  --secondary-bg-color: #c7c8c9;
-  --primary-border-color: #c7c8c9;
-  --secondary-border-color: #9a9a9c;
-
-  --title-color: #0b0b0f;
-  --text-color: #28292e;
-  --link-color: #28292e;
-  --icon-color: #56575a;
-}
-
-html[data-theme='light'] .brand__logo {
-  filter: invert(1);
-}
-
-html[data-theme='light'] .technologies__logo {
-  filter: invert(80%);
-} */
-
 * {
   margin: 0;
   padding: 0;
@@ -88,7 +50,7 @@ body {
 }
 
 ::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 8px;
 }
 
 ::-webkit-scrollbar-track {
@@ -97,7 +59,7 @@ body {
 
 ::-webkit-scrollbar-thumb {
   background: var(--secondary-bg-color);
-  border-radius: 50rem;
+  border-radius: 800px;
 }
 
 a {
@@ -118,25 +80,25 @@ b {
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 40px;
   font-weight: 200;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 32px;
   text-align: center;
-  letter-spacing: 0.4rem;
+  letter-spacing: 7px;
 }
 
 h3 {
-  font-size: 1.55rem;
+  font-size: 10px;
   text-align: left;
 }
 
 h4 {
   color: var(--primary-color);
   font-weight: 400;
-  font-size: 1.15rem;
+  font-size: 18px;
   text-align: left;
 }
 
@@ -152,7 +114,7 @@ h3 {
 p,
 span,
 li {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 p {
@@ -165,7 +127,7 @@ p {
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
   z-index: 2;
 }
 
@@ -175,12 +137,12 @@ p {
 }
 
 .header__brand .brand__logo {
-  width: 3.25rem;
-  height: 3.25rem;
+  width: 50px;
+  height: 50px;
 }
 
 #toggleTheme {
-  font-size: 1.5rem;
+  font-size: 24px;
   color: var(--primary-color);
   cursor: pointer;
   transition: ease-in-out 0.4s;
@@ -199,7 +161,7 @@ p {
 .menu__link {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .menu--mobile {
@@ -213,14 +175,15 @@ p {
 .menu--mobile .menu__link {
   flex-direction: column;
   justify-content: center;
-  padding: 0.5rem 1rem;
+  padding: 8px 16px;
 }
 
 .menu__link.active .menu__icon,
 .menu__link.active .menu__text,
 .menu__link:hover .menu__icon,
 .menu__link:hover .menu__text {
-  color: var(--primary-color);
+  /* color: var(--primary-color); */
+  color: #dce7f2;
 }
 
 .menu__icon,
@@ -229,11 +192,11 @@ p {
 }
 
 .menu__icon {
-  font-size: 1.5rem;
+  font-size: 24px;
 }
 
 .menu__text {
-  font-size: 0.75rem;
+  font-size: 13px;
   text-transform: uppercase;
 }
 
@@ -242,23 +205,23 @@ p {
 }
 
 .menu--principal {
-  gap: 1rem;
+  gap: 16px;
 }
 
 .menu--social {
-  gap: 1rem;
+  gap: 16px;
 }
 
 .btn {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 0.625rem;
+  gap: 10px;
   width: 100%;
   background: transparent;
-  border-radius: 3.125rem;
+  border-radius: 50px;
   border: none;
-  padding: 0.875rem 1.5rem;
+  padding: 14px 24px;
   transition: ease-in-out 0.3s;
   cursor: pointer;
   color: var(--primary-color);
@@ -271,7 +234,7 @@ p {
 
 .btn span,
 .btn i {
-  font-size: 1.25rem;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -287,19 +250,19 @@ main,
 .projects,
 .about,
 .contact {
-  padding: 2.5rem 1rem;
+  padding: 40px 16px;
 }
 
 main {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 32px;
 }
 
 .main__content1 {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 .main__content2 img {
@@ -312,14 +275,14 @@ main {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 1.25rem;
-  padding: 6.25rem 1rem 2rem;
+  gap: 20px;
+  padding: 100px 16px 32px;
   background: var(--secondary-bg-color);
-  margin-top: -5.5rem;
+  margin-top: -88px;
 }
 
 .technologies h2 {
-  font-size: 2rem;
+  font-size: 32px;
   text-transform: none;
   letter-spacing: normal;
   text-align: start;
@@ -328,7 +291,7 @@ main {
 .technologies__list {
   display: flex;
   flex-flow: row wrap;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .technologies__item {
@@ -336,39 +299,39 @@ main {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 4.8rem;
-  height: 4.8rem;
+  width: 76px;
+  height: 76px;
   aspect-ratio: 1/1;
   border: 1px solid var(--secondary-border-color);
-  border-radius: 50rem;
+  border-radius: 800px;
   background-color: var(--icon-color);
 }
 
 .technologies__logo {
-  height: 2.4rem;
+  height: 40px;
 }
 
 .projects {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 32px;
 }
 
 .projects__container {
   display: flex;
   flex-direction: column;
-  gap: 4rem;
+  gap: 64px;
 }
 
 .projects__card {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 32px;
 }
 
 .card__cover {
   width: 100%;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   object-fit: cover;
   object-position: center;
 }
@@ -378,7 +341,7 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
-  gap: 1rem;
+  gap: 16px;
 }
 
 .card__description {
@@ -387,7 +350,7 @@ main {
 
 .card__list,
 .about__list {
-  margin-left: 1.25rem;
+  margin-left: 20px;
 }
 
 .card__item,
@@ -403,24 +366,24 @@ main {
 }
 
 .card__buttons .btn {
-  padding: 0.65rem 1.25rem;
+  padding: 10px 20px;
 }
 
 .card__buttons .btn span {
-  font-size: 1rem;
+  font-size: 16px;
 }
 
 .card__body .technologies__list {
-  gap: 0.75rem;
+  gap: 12px;
 }
 
 .card__body .technologies__item {
-  width: 4rem;
-  height: 4rem;
+  width: 64px;
+  height: 64px;
 }
 
 .card__body .technologies__logo {
-  height: 2rem;
+  height: 32px;
 }
 
 .projects .btn {
@@ -431,7 +394,7 @@ main {
 .about {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 .about__content1,
@@ -440,7 +403,7 @@ main {
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 2rem;
+  gap: 32px;
 }
 
 .about__photo {
@@ -448,7 +411,7 @@ main {
   object-fit: cover;
   object-position: center;
   pointer-events: none;
-  border-radius: 50rem;
+  border-radius: 800px;
   border: 1px solid var(--primary-border-color);
 }
 
@@ -456,17 +419,17 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  gap: 1.5rem;
+  gap: 24px;
 }
 
 .about__icons {
   display: flex;
   align-items: center;
-  gap: 0.85rem;
+  gap: 10px;
 }
 
 .about__icons i {
-  font-size: 1.25rem;
+  font-size: 20px;
 }
 
 .about__content2 .col1,
@@ -474,7 +437,7 @@ main {
   display: flex;
   flex-direction: column;
   text-align: justify;
-  gap: 2rem;
+  gap: 32px;
 }
 
 .title-education {
@@ -485,13 +448,13 @@ main {
 .about__content2 .col1 .row2 {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 8px;
 }
 
 .accordion__header {
   width: 100%;
   display: flex;
-  padding: 0.75rem 1rem;
+  padding: 12px 16px;
   justify-content: space-between;
   align-items: center;
   border: 1px solid var(--primary-border-color);
@@ -506,12 +469,12 @@ main {
 }
 
 .accordion__header.start {
-  border-radius: 0.25rem 0.25rem 0rem 0rem;
+  border-radius: 4px 4px 0 0;
 }
 
 .accordion__header.end,
 .accordion__item.active .accordion__body.end {
-  border-radius: 0rem 0rem 0.25rem 0.25rem;
+  border-radius: 0 0 4px 4px;
 }
 
 .accordion__item.active .accordion__header.end {
@@ -520,10 +483,10 @@ main {
 
 .accordion__body {
   display: none;
-  padding: 1.25rem;
+  padding: 20px;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.625rem;
+  gap: 10px;
   border: 1px solid var(--primary-border-color);
 }
 
@@ -544,7 +507,7 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1.5rem;
+  gap: 24px;
   border-top: 1px solid var(--primary-border-color);
   border-bottom: 1px solid var(--primary-border-color);
 }
@@ -566,17 +529,16 @@ footer {
 }
 
 footer p {
-  font-size: 0.875rem;
+  font-size: 14px;
   text-align: center;
-  padding: 1rem;
+  padding: 16px;
 }
 
-/* Responsividade */
 @media (min-width: 768px) {
   .header {
     position: fixed;
     border-bottom: 1px solid var(--primary-border-color);
-    padding: 1rem 6rem;
+    padding: 16px 95px;
     background: var(--primary-bg-color);
   }
 
@@ -594,21 +556,21 @@ footer p {
   }
 
   h1 {
-    font-size: 5rem;
+    font-size: 80px;
   }
 
   h2 {
-    font-size: 3rem;
+    font-size: 48px;
   }
 
   main,
   .projects,
   .about {
-    padding: 8rem 6rem 4rem 6rem;
+    padding: 128px 95px 64px 95px;
   }
 
   .contact {
-    padding: 6rem;
+    padding: 128px;
   }
   .contact p {
     width: 80%;
@@ -621,8 +583,8 @@ footer p {
   }
 
   .technologies {
-    padding: 6.25rem 6rem 2rem 6rem;
-    margin-top: -6rem;
+    padding: 132px 128px 32px 128px;
+    margin-top: -128px;
   }
 
   footer {
@@ -645,7 +607,7 @@ footer p {
   }
 
   .about {
-    gap: 5rem;
+    gap: 80px;
   }
 
   .about__content1,
@@ -654,7 +616,7 @@ footer p {
     grid-template-columns: 34% 60%;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 4rem;
+    gap: 64px;
   }
 
   .about__description h2 {
@@ -663,86 +625,5 @@ footer p {
 
   .description__buttons {
     justify-content: flex-start;
-  }
-}
-
-@media (min-width: 1200px) {
-  h2 {
-    font-size: 4rem;
-  }
-
-  h3 {
-    font-size: 2.5rem;
-  }
-
-  main {
-    padding: 12rem 6rem 2rem;
-  }
-
-  .main__content1 .btn {
-    width: auto;
-  }
-
-  .technologies {
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10rem 6rem 4rem;
-  }
-
-  .technologies h2 {
-    font-size: 3rem;
-    width: 55%;
-  }
-
-  .technologies__list {
-    gap: 1rem;
-  }
-
-  .technologies__item {
-    width: 6rem;
-    height: 6rem;
-  }
-
-  .technologies__logo {
-    height: 3rem;
-  }
-
-  p,
-  span,
-  li {
-    font-size: 1.15rem;
-  }
-
-  .card__buttons .btn,
-  .description__buttons .btn {
-    width: auto;
-  }
-}
-
-@media (min-width: 1400px) {
-  h1 {
-    font-size: 6.25rem;
-  }
-
-  h2 {
-    font-size: 4.5rem;
-  }
-
-  h3 {
-    font-size: 3.25rem;
-  }
-
-  .header {
-    padding: 1rem 15rem;
-  }
-
-  main {
-    padding: 12rem 15rem 2rem;
-  }
-
-  .technologies,
-  .projects,
-  .about {
-    padding: 10rem 15rem 4rem;
   }
 }
